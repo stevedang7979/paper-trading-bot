@@ -1,0 +1,26 @@
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+.big {
+  width: 200px;
+  height: 200px;
+}
+
+.animate {
+  animation: rotate 35s infinite linear;
+}
+
+.reverse {
+  animation-direction: reverse;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

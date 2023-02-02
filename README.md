@@ -1,1 +1,1 @@
-# paper-trading-bot
+Paper trading BOT
