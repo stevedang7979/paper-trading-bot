@@ -1,0 +1,21 @@
+{
+  "pic": "profile_pic.gif",
+  "navLinks": [
+    {
+      "name": "Prices",
+      "link": "#prices"
+    },
+    {
+      "name": "Equity",
+      "link": "#equity"
+    },
+    {
+      "name": "OrdersHistory",
+      "link": "#ordersHistory"
+    },
+    {
+      "name": "Message",
+      "link": "#message"
+    }
+  ]
+}

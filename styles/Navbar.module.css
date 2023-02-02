@@ -1,0 +1,92 @@
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: var(--color-yellow);
+  border-bottom: 0px solid var(--nav-border-bottom);
+  box-shadow: inset 0px -1px 1px var(--nav-shadow);
+  z-index: 3;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(100px);
+  transform: translateY(0);
+  transition: transform 200ms;
+}
+
+.hidden {
+  /* transform: translateY(-100%); */
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  min-height: 60px;
+}
+
+.container > a {
+  border: unset;
+}
+
+.container > a::before {
+  height: 0;
+}
+
+.links {
+  display: initial;
+  margin-left: auto;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.item {
+  margin: 0 10px;
+}
+
+.item a {
+  padding-top: 1px;
+  font-weight: 500;
+}
+
+.right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.right > * {
+  margin-left: 10px;
+}
+
+.right > a {
+  border: unset;
+}
+
+.right a:before {
+  height: 0;
+}
+
+.hide {
+  display: none;
+}
+
+/* to be made for mobile - Burger menu */
+@media screen and (max-width: 1200px) {
+  .container {
+    justify-content: space-between;
+  }
+  .links {
+    display: none;
+  }
+  .hide {
+    display: flex;
+    gap: 10px;
+  }
+  .right {
+    display: none;
+  }
+}
