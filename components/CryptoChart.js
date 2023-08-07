@@ -28,7 +28,7 @@ const CryptoChart = () => {
 
     const fetchData = async () => {
         let data = { index: [], price: [], volumes: [] };
-        let result = await callAPI("https://api.coingecko.com/api/v3/coins/ethereum/market_chart?vs_currency=usd&days=1&interval=1m");
+        let result = await callAPI("https://api.coingecko.com/api/v3/coins/ethereum/market_chart?vs_currency=usd&days=1");
         for (const item of result.prices) {
             data.index.push(item[0]);
             data.price.push(item[1]);

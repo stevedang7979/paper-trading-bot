@@ -25,7 +25,7 @@ const PortfolioChart = () => {
 
     const fetchData = async () => {
         let data = { symbol: [], type: [], avg: [], amount: [], qty: [], date: [] , color: []};
-        let result = await callAPI("https://api.coingecko.com/api/v3/coins/ethereum/market_chart?vs_currency=usd&days=1&interval=1m");
+        // let result = await callAPI("https://api.coingecko.com/api/v3/coins/ethereum/market_chart?vs_currency=usd&days=1&interval=1m");
         const Alpaca = require('@alpacahq/alpaca-trade-api')
         const alpaca = new Alpaca({
             keyId: 'PKP8LKQAS4FBT4VA0N5L',
